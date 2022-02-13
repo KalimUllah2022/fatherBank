@@ -6,14 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="src/img/Bank-PNG-Photos.png" type="image/x-icon">
 </head>
 
 <body>
 
+    <header>
+        <h1 class="text-5xl mt-48 text-center mb-4">Let's get some<span class="text-purple-600 font-semibold"> Money</span>!!!</h1cl>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- Balance and transaction -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 ">
+                <div class="bg-sky-900 text-white rounded p-5">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-4xl">$<span id='depositTotal'>00</span></h4>
+                </div>
+                <div class="bg-amber-900 text-white rounded p-5">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-4xl">$<span id="withdrawTotal">00</span></h4>
+                </div>
+                <div class="bg-indigo-900 text-white rounded p-5">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-4xl">$<span id="balanceTotal">1200</span> </h4>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and withdraw -->
+        <section class=" mt-10">
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-violet-400 rounded p-5">
+                    <h3 class="text-2xl mb-3">Please Deposit</h3>
+                    <div class="">
+                        <form action="" method="">
+                            <input id="deposit-input" class="block border focus-visible:border-fuchsia-500 focus:border-fuchsia-500 border-fuchsia-400 w-full mb-2 rounded-sm px-3 py-1" type="text " placeholder="$ Amount You want Deposit">
+                            <button id="deposit-btn" class="bg-sky-300 hover:bg-sky-500 rounded text-white py-1 px-3" type="button">Deposit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="bg-emerald-600 rounded p-5">
+                    <h3 class="text-2xl mb-3">Please Withdraw</h3>
+                    <div class="">
+                        <form action="" method="">
+                            <input id="withdraw-input" class="block border focus-visible:border-fuchsia-500 focus:border-fuchsia-500 border-fuchsia-400 w-full mb-2 rounded-sm px-3 py-1" type="text " placeholder="$ Amount You want Withdraw">
+                            <button id="withdraw-btn" class="bg-sky-300 hover:bg-sky-500 rounded text-white py-1 px-3" type="button">Withdraw</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <h1>Father Bank</h1>
 
+    <script src="src/js/banking.js"></script>
 
 </body>
 
