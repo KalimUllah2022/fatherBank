@@ -1,8 +1,8 @@
 // Login Form Function
-document.getElementById('loginBtn').addEventListener('click', function() {
+document.getElementById('submit-btn').addEventListener('click', function() {
     const emailField = document.getElementById('user-email');
     const userEmail = emailField.value;
-    // console.log(userEmail);
+    console.log(userEmail);
     const passwordField = document.getElementById('user-password');
     const userPassword = passwordField.value;
     // console.log(userPassword);
